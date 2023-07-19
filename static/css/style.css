@@ -30,7 +30,6 @@ ul{
 .greeting{
     width: 50%;
     display: absolute;
-    color: #fff;
     border: 1px solid #fff;
     margin-left: 25%;
     background-color: rgb(183, 224, 249);
@@ -41,3 +40,15 @@ ul{
     text-align: center;
 }
 
+.img-footer{
+    margin-top: 0px;
+    margin-bottom: 10vh;
+}
+
+#heading {
+    color: blue;
+}
+
+.popular {
+    border: 4px dotted red;
+}
