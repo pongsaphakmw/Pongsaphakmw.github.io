@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+    <style>
+        div {
+            background-color: blue;
+            width: 25%;
+            height: 100px;
+            float: left;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 16; i++) {
+            let myDiv = document.createElement('div');
+            document.body.appendChild(myDiv);
+        }
+        const random = (number) => {
+            return Math.floor(Math.random() * number);
+        }
+
+        const bgChange = () => {
+            let randomColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+            return randomColor;
+        }
+
+        let divs = document.querySelectorAll('div');
+        let firstColor = bgChange();
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].onclick = (e) => {
+                if (i % 2 == 0) {
+                    e.target.style.backgroundColor = bgChange();
+                } else {
+                    e.target.style.backgroundColor = firstColor;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
