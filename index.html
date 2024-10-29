@@ -3,39 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
-    <title>Pongsaphak</title>
+    <title>Twan Portfolio</title>
 </head>
 <body>
-    <div class="greeting">
-        <div class="img">
-            <figure>
-                <img src="https://img.freepik.com/free-photo/green-field-tree-blue-skygreat-as-backgroundweb-banner-generative-ai_1258-158251.jpg?w=2000&t=st=1687315969~exp=1687316569~hmac=82c44b49312cf8807223d73c2172b409cbb257e6269f03feeed0e38654aa5f66" alt="" class="image">
-                <img src="https://www.banmuang.co.th/uploads/news/img/m/271739_th.jpg" alt="" class="image">
-                <p class="img-footer">Beautiful flower</p>
-            </figure>
-        </div>
-        <span class="title center">
-            <h1>Welcome to my website</h1>
-        </span>
-        <span class="sub-title center">
-            <h2>My name is Pongsaphak Maneewong</h2>
-            <h2>643040632-9</h2>
-        </span>
-        <div class="center">
-            <p id="heading">Location in Khonakaen University</p>
-            <ul>
-                <li class="popular">คณะวิศกรรมศาสตร์</li>
-                <li>ห้อง EN4210</li>
-                <li class="popular">Digital lab</li>
-            </ul>
-            <p>If you want to see more location click this link
-                <a target=”_blank” href="https://kku.ac.th/">KKU</a>
-            </p>
-        </div>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
     </div>
+
+    <!-- Background Tracery -->
+    <div class="background-tracery"></div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#works">Works</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <h1>Hello, I'm <span>Your Name</span></h1>
+                <p>A passionate developer focused on creating intuitive and efficient web solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in touch</a>
+                    <a href="#works" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- Skills will be added dynamically -->
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="section">
+            <h2 class="section-title">Recent Work</h2>
+            <div class="works-grid">
+                <!-- Works will be added dynamically -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script src="static/js/main.js"></script>
 </body>
 </html>
