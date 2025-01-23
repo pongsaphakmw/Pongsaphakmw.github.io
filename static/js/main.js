@@ -1,24 +1,24 @@
 // Skills Data
 const skills = [
     {
-        name: 'Frontend Development',
-        description: 'Crafting responsive and interactive user interfaces using HTML, CSS, and JavaScript.',
-        icon: '💻'
-    },
-    {
-        name: 'Web Design',
-        description: 'Creating beautiful and functional designs with attention to UX/UI principles.',
-        icon: '🎨'
-    },
-    {
         name: 'Version Control',
         description: 'Managing code using Git and GitHub for efficient collaboration and deployment.',
         icon: '🔄'
     },
     {
-        name: 'Performance Optimization',
-        description: 'Optimizing websites for speed, accessibility, and search engine visibility.',
-        icon: '⚡'
+        name: 'Full-stack Development',
+        description: 'Building web applications from front-end to back-end using modern technologies.',
+        icon: '💻'
+    },
+    {
+        name: 'DevOps Automation',
+        description: 'Automating infrastructure setup and deployment using GitHub Actions and Docker.',
+        icon: '⚙️'
+    },
+    {
+        name: 'Prompt Engineering',
+        description: 'Using Generative AI to do the stuff especially in software development.',
+        icon: '🤖'
     }
 ];
 
@@ -30,8 +30,8 @@ const works = [
         image: '/api/placeholder/400/300'
     },
     {
-        title: 'E-commerce Platform',
-        description: 'Full-featured online store with shopping cart, user authentication, and payment integration.',
+        title: 'Cloud Cafe',
+        description: 'Experience with a relaxing ambiance, friendly community, and enjoyable conversations through a chat system.',
         image: '/api/placeholder/400/300'
     },
     {
